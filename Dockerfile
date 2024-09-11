@@ -7,4 +7,5 @@ WORKDIR /app
 RUN ls -al
 RUN npm ci --no-package-lock
 RUN npm run build
+EXPOSE 3000
 ENTRYPOINT ["npm","run", "start:prod"]
